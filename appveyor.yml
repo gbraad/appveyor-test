@@ -14,4 +14,4 @@ shallow_clone: true
 install:
   - systeminfo
   - ps: ./installed.ps1
-
+  - ps: Get-WindowsFeature
