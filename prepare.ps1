@@ -5,5 +5,5 @@ $wc = New-Object System.Net.WebClient
 $wc.DownloadFile($Url, $Downloaded)
 
 Add-Type -assembly "system.io.compression.filesystem"
-[io.compression.zipfile]::ExtractToDirectory($Downloaded, $PSScriptRoot)
+[io.compression.zipfile]::ExtractToDirectory($Downloaded, "$PSScriptRoot/out")
 
