@@ -1,0 +1,16 @@
+---
+version: 1.0.{build}
+
+branches:
+  only:
+    - master
+
+image: Windows Server 2016
+
+platform: x64
+
+shallow_clone: true
+
+install:
+  - ps: Write-Host $env
+  - systeminfo
