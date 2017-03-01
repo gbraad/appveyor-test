@@ -12,6 +12,5 @@ platform: x64
 shallow_clone: true
 
 install:
-  - systeminfo
-  - ps: ./installed.ps1
-  - ps: Get-WindowsFeature
+  - ps: ./prepare.ps1
+  - ps: ./minishift.exe start
