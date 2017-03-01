@@ -13,4 +13,5 @@ shallow_clone: true
 
 install:
   - ps: ./prepare.ps1
-  - ps: ./out/minishift.exe start
+  - ps: ./out/minishift.exe start --vm-driver hyperv
+
