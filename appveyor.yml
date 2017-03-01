@@ -12,5 +12,6 @@ platform: x64
 shallow_clone: true
 
 install:
-  - ps: Write-Host $env
   - systeminfo
+  - ps: ./installed.ps1
+
